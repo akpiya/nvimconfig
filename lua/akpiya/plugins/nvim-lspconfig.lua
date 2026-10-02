@@ -39,6 +39,7 @@ return {
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local servers = {
       clangd = {},
+      gopls = {},
       pyright = {},
       lua_ls = {
         settings = {
@@ -59,5 +60,8 @@ return {
       ensure_installed = server_names,
       automatic_enable = server_names,
     })
+
+    vim.lsp.config("nil_ls", { capabilities = capabilities })
+    vim.lsp.enable("nil_ls")
   end,
 }

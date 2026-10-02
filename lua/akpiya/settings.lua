@@ -18,7 +18,7 @@ vim.o.splitbelow = true
 vim.o.signcolumn = "yes"
 
 vim.o.list = true
-vim.o.listchars = "tab:» ,trail:·,nbsp:␣"
+vim.o.listchars = "trail:·,nbsp:␣"
 vim.o.inccommand = "split"
 vim.o.cursorline = true
 vim.o.scrolloff = 10
